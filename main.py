@@ -22,17 +22,22 @@ GO2 =os.getenv('GO2')
 
 
 app = Flask(__name__)
-CORS(app)
+
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
 app.config['MAIL_USE_TLS'] = False
+print(email)
 app.config['MAIL_USERNAME'] = email  # Replace with your email
 app.config['MAIL_PASSWORD'] = password  # Replace with your password
+print(email)
 app.config['MAIL_DEFAULT_SENDER'] = email  # Replace with your email
+print(email)
 mail = Mail(app)
-# print("lol") 
+
+CORS(app)
+print("lol") 
 
 @app.route('/')
 def index():
@@ -43,7 +48,7 @@ def index():
 def submit_form():
     # Get form data
     first_name = request.form.get('first-name')
-    email =request.form.get('email')
+    e_mail =request.form.get('email')
     last_name = request.form.get('last-name')
     phone = request.form.get('phone')
     subject = request.form.get('subject')
@@ -53,8 +58,10 @@ def submit_form():
 
     # Create email message
     msg = Message(subject='New message for Reynanda from website', recipients=[GO1, GO2])  # Replace with your email
-    msg.body = f'Hey, you got a message from {first_name} {last_name} (Email: {email}, Phone: {phone})\nSubject: {subject}\nDescription: {description}'
+    msg.body = f'Hey, you got a message from {first_name} {last_name} (Email: {e_mail}, Phone: {phone})\nSubject: {subject}\nDescription: {description}'
     print(first_name)
+    # print(email)
+    # print(e_mail)
     print(description)
     # Send email
     mail.send(msg)
