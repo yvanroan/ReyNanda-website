@@ -3,6 +3,10 @@ from flask_mail import Mail, Message
 import smtplib
 from dotenv import load_dotenv
 import os
+from flask_cors import CORS
+
+
+
 
 # Load environment variables from .env file
 load_dotenv()
@@ -18,6 +22,7 @@ GO2 =os.getenv('GO2')
 
 
 app = Flask(__name__)
+CORS(app)
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465

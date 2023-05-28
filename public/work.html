@@ -132,7 +132,7 @@
                     <span class="h-10 min-h-4 block "></span> 
                     <p class="w-2/3"> If you have an idea or a project in progress let our experts know, we're always happy to help!</p>
                     <span class="h-10 min-h-4 block "></span>
-                    <form class="flex flex-col justify-center" action="/submit-form" method="post" id="form">  
+                    <form class="flex flex-col justify-center" action="https://distpatcher.herokuapp.com/submit-form" method="post" id="form">  
                         <!-- in local (http://localhost:5000/submit-form), in prod (/submit-form) -->
                       <div class="flex gap-4">
                         <div class="mb-4">
@@ -247,7 +247,7 @@ document.getElementById("form").addEventListener("submit", function(event) {
   
 
   // Send a POST request to the Flask app using fetch()
-  fetch("/submit-form", {
+  fetch("https://distpatcher.herokuapp.com/submit-form", {
     method: "POST",
     body: formData
   })
