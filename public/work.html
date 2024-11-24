@@ -1,300 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="assets/ReyNana.png" rel="icon">
     <title>ReyNanda Inc</title>
-    <link rel="stylesheet" href="/dist/output.css">
+    <link href="assets/ReyNana.png" rel="icon">
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script>
-      $(document).ready(function() {
-        $('form').submit(function(event) {
-          // Prevent default form submission behavior
-          event.preventDefault();
-
-          // Send AJAX request to server
-          $.ajax({
-            url: '/submit-form',
-            type: 'POST',
-            data: $('form').serialize(),
-            success: function(response) {
-              alert(response);
-            },
-            error: function(xhr, status, error) {
-              console.log(xhr.responseText);
-            }
-          });
-        });
-      });
-    </script> -->
-    </head>
-
-    <body>
-      <nav>
-        <div class="flex items-center justify-around bg-gray-500 p-6">
+  </head>
+  <body class="bg-gray-900 text-white font-sans">
+    <nav>
+      <div class="flex items-center justify-around bg-gray-800 p-6">
+  
+        <a class="flex items-center text-white" href="/">
+          <img src="assets/rn.jpg" class="h-10 mr-3" alt="logo"> ReyNanda Inc
+        </a>
     
-          <div class="flex-none h-full mr-4">
-            <img src="assets/rn.jpg" style="width:150px; height:90px" alt="logo">
-          </div>
-      
-          <div class="block lg:hidden">
-            <button class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600 hover:text-white hover:border-white" onclick="toggleNav()">
-              <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <title>Menu</title>
-                <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z"/>
-              </svg>
-            </button>
-          </div>
-          <div class="hidden lg:flex lg:items-center lg:w-auto bg-gray-500">
-            <div>
-              <ul class="lg:flex lg:flex-row">
-                <li class="lg:mr-8">
-                  <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-gray-200 py-2 px-4" href="index.html">Home</a>
-                </li>
-                <li class="lg:mr-8">
-                  <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-gray-200 py-2 px-4" href="service.html">Service</a>
-                </li>
-                <li class="lg:mr-8">
-                  <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-gray-200 py-2 px-4" href="work.html">Work</a>
-                </li>
-                <li class="lg:mr-8">
-                  <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-gray-200 py-2 px-4" href="about.html">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 rounded  hover:text-white hover:border-white" onclick="toggleNav()">
+            <svg class="h-3 w-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0zm0 6h20v2H0zm0 6h20v2H0z"/>
+            </svg>
+          </button>
         </div>
-        <div class="hidden bg-gray-500" id="menu">
+        <div class="hidden lg:flex lg:items-center lg:w-auto">
           <div>
             <ul class="lg:flex lg:flex-row">
               <li class="lg:mr-8">
-                <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-gray-200 py-2 px-4" href="index.html">Home</a>
+                <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-yellow-200 py-2 px-4" href="index.html">Home</a>
               </li>
               <li class="lg:mr-8">
-                <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-gray-200 py-2 px-4" href="service.html">Service</a>
+                <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-yellow-200 py-2 px-4" href="service.html">Service</a>
               </li>
               <li class="lg:mr-8">
-                <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-gray-200 py-2 px-4" href="work.html">Work</a>
+                <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-yellow-200 py-2 px-4" href="work.html">Work</a>
               </li>
               <li class="lg:mr-8">
-                <a class="hover:text-gray-900 rounded hover:border-gray-200 text-white hover:bg-gray-200 py-2 px-4" href="about.html">About</a>
+                
               </li>
             </ul>
           </div>
         </div>
-      </nav>
+      </div>
+      <div class="hidden bg-gray-800 p-6" id="menu">
+        <div>
+          <ul class="lg:flex lg:flex-row">
+            <li class="lg:mr-8">
+              <a class="hover:text-gray-900 rounded hover:border-yellow-200 text-white  py-2 px-4" href="index.html">Home</a>
+            </li>
+            <li class="lg:mr-8">
+              <a class="hover:text-gray-900 rounded hover:border-yellow-200 text-white py-2 px-4" href="service.html">Service</a>
+            </li>
+            <li class="lg:mr-8">
+              <a class="hover:text-gray-900 rounded hover:border-yellow-200 text-white py-2 px-4" href="work.html">Work</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-      <main>
-        <div class="flex justify-center h-32 w-full bg-yellow-500 text-xl items-center">
-          <strong>Website under construction</strong>  
-        </div>
-        <div class="bg-cover bg-center h-screen flex justify-center items-center" style="background-image: url('assets/back_work.jpg');">
-          <div class="text-white text-center mx-auto my-auto">
-            <h2 class="text-center font-bold mb-4 p-6 text-6xl md:text-8xl lg:text-9xl">OUR RECENT WORK</h2>
-            <p class="text-center mb-8 text-xl md:text-2xl lg:text-3xl">Inspired by modern constructions and cutting edge techniques</p>
-            <div class="flex justify-around">
-              <button class="bg-yellow-400 hover:bg-gray-400 text-gray-800  py-2 px-4 rounded mx-2 text-xl md:text-2xl lg:text-3xl">
-                GET A QUOTE TODAY
-              </button>
-            </div>
-          </div>
-        </div>
+    <header class="bg-cover bg-center py-32" style="background-image: url('assets/servicebg.png');">
+      <div class="container mx-auto flex flex-col items-center text-center">
+        <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-4" style="color: #FDF5E6;">POWERING YOUR WORKFORCE</h1>
+        <p class="mb-8 text-xl md:text-2xl lg:text-3xl">Get Skilled Labourers For Your Business</p>
+        <a href="service.html#quote" class="bg-yellow-500 text-gray-800 py-2 px-4 rounded hover:bg-yellow-600 transition duration-300 text-xl md:text-2xl lg:text-3xl">GET A QUOTE TODAY</a>
+      </div>
+    </header>
 
-        <span class="h-16 min-h-10 block "></span>
-        <section>
-                <div  class="">
-                  <div class="flex items-center justify-center">
-                    <div class="flex items-center space-x-4">
-                      <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-400" onclick="showImages('A')">NDT</button>
-                      <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-400" onclick="showImages('B')">Industrial, Residential and Commercial Projects</button>
-                      <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-400" onclick="showImages('C')">Manpower Provider</button>
-                      <button class="px-4 py-2 bg-gray-200 rounded-md hover:bg-yellow-400" onclick="showImages('all')">All</button>
-                    </div>
-                  </div>
-                  
-                  <div class="grid grid-cols-3 gap-4 mt-4" id="image-container">
-                    <!-- Images will be dynamically added here -->
-                  </div>
-                </div>
-                
-                <span class="h-16 min-h-10 block "></span>
-                <div class="bg-cover bg-center h-screen flex flex-col justify-center items-center" style="background-image: url('assets/bg_form.jpg');">
-                      
-                  
-                  <div class="flex flex-col justify-center items-center bg-gray-300 md:w-1/3">
-                    <div class="flex justify-center bg-yellow-400 text-center items-center h-16 w-full"> <span class=" text-2xl"> TALK TO US, WE'RE HERE TO HELP </span></div>    
-                    <span class="h-10 min-h-4 block "></span> 
-                    <p class="w-2/3"> If you have an idea or a project in progress let our experts know, we're always happy to help!</p>
-                    <span class="h-10 min-h-4 block "></span>
-                    <form class="flex flex-col justify-center" action="https://distpatcher.herokuapp.com/submit-form" method="post" id="form">  
-                        <!-- in local (http://localhost:5000/submit-form), in prod (/submit-form) -->
-                      <div class="flex gap-4">
-                        <div class="mb-4">
-                          <label class="block text-white font-bold mb-2" for="first-name">
-                            First Name
-                          </label>
-                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" form="form" name="first-name" id="first-name" type="text" placeholder="First Name" required>
-                        </div>
-                        <div class=" mb-4">
-                          <label class="block text-white font-bold mb-2" for="last-name">
-                            Last Name
-                          </label>
-                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" form="form" name="last-name" id="last-name" type="text" placeholder="Last Name">
-                        </div>
-                      </div>
-                      <div class="flex gap-4">
-                        <div class="mb-4">
-                          <label class="block text-white font-bold mb-2" for="email">
-                            Email
-                          </label>
-                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" form="form" name="email" id="email" type="email" placeholder="Email" required>
-                        </div>
-                        <div class="mb-4">
-                          <label class="block text-white font-bold mb-2" for="phone">
-                            Phone Number
-                          </label>
-                          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" form="form" name="phone" id="phone" type="tel" placeholder="Phone Number">
-                        </div>
-                      </div>
-                      <div class="mb-4 w-2/3">
-                        <label class="block text-white font-bold mb-2" for="subject">
-                          Subject
-                        </label>
-                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" form="form" name="subject" id="subject" type="text" placeholder="Subject" required>
-                      </div>
-                      <div class="mb-4">
-                        <label class="block text-white font-bold mb-2" for="description">
-                          Description
-                        </label>
-                        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" form="form" name="description" id="description" placeholder="Description" cols="30" rows="10"></textarea>
-                      </div>
-                      <div class="flex items-center justify-between">
-                        <button class="bg-white hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" form="form">
-                          Get Free Quote
-                        </button>
-                      </div>
-                      <div id="parentmessage"><p id="message" ></p></div>
-                    </form>
-                    <span class="h-10 min-h-4 block "></span> 
-                  </div>
-                </div>
-              </div>
-              
-        </section>
-      </main>
-      <footer class="bg-gray-800">
-        <span class="h-10 min-h-4 block"></span>
-        <div class="flex flex-wrap gap-8">
-          <div class="flex flex-1 flex-col justify-between gap-8">
-    
-            <div class="flex justify-center">
-              <img
-                src="assets/ReyNana.png"
-                alt="house" style="width: 150px; height:auto">
-            </div>
-            <p class="text-gray-500">Copyright © 2023 Reynanda Inc. All rights reserved.</p>
-            <a href="#" target="_blank" class="flex justify-center">
-              <button class="block border border-black rounded hover:border-gray-200 hover:bg-gray-200 py-2 px-4" style="background-color: #ffd700;">Learn More</button>
-            </a>
-            
-    
+    <main class="container mx-auto px-6 py-12">
+      <section class="text-center">
+        <p class="text-2xl md:text-3xl lg:text-4xl mb-8">Do You Need Man Power for Your Business? We Can Help!</p>
+        <a href="service.html#quote" class="bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded transition duration-300">Get A Free Quote</a>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <img src="assets/ReyNana.png" alt="ReyNana" class="h-12">
+          <div>
+            <p class="text-gray-400 text-sm">© 2024 Reynanda Inc. All rights reserved.</p>
+            <p>Made with ❤ by Fors T(Yvan)</p>
           </div>
-    
-          <!-- <div class="flex  flex-col flex-1 justify-between gap-4 h-full">
-            <h3 class="text-xl" style="color: #ffd700;"> TESTIMONIAL </h3>
-              <a>LOCATION</a>
-              <a>IPSUM DOLOR</a>
-              <a>IPSUM DOLOR</a>
-              <a>IPSUM DOLOR</a>
-          </div> -->
-    
-          <div class="flex flex-col flex-1 h-full justify-between gap-4">
-    
-            <h3 class="text-xl" style="color: #ffd700;">CONTACT US TODAY</h3>
-            
-              <span class="text-gray-500">Email: reynandainc1@gmail.com</span>
-              <span class="text-gray-500">Phone: +1(780) 604-0607</span>
-              <span class="text-gray-500">Phone: +1(587) 568-9539</span>
-    
-          </div>
-    
-          <div class=" flex flex-1 flex-col gap-4">
-            <h2 class="text-xl" style="color: #ffd700;">LOCATION</h2>
-            <span class="text-gray-500"> <address> 9620-221 St NW, Edmonton, AB T5T 5X8</address></span>
+          <div class="text-gray-400">
+            <p>Email: reynandainc1@gmail.com</p>
+            <p>Phone: +1(587) 568-9539</p>
+            <p>Location: <address>9620-221 St NW, Edmonton, AB T5T 4N7</address></p>
           </div>
         </div>
-    
-        <span class="h-10 min-h-4 block"></span>
+      </div>
     </footer>
-    </body>
-</html>
-<script>
-
-  // Prevent the default form submission behavior
- 
-document.getElementById("form").addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  // Get the form data
-  var formData = new FormData(this);  
-
-  
-
-  // Send a POST request to the Flask app using fetch()
-  fetch("https://distpatcher.herokuapp.com/submit-form", {
-    method: "POST",
-    body: formData
-  })
-  .then(response => {
-    if (response.ok) {
-      // Success: Display a success message
-      var successMessage = document.createElement("p");
-      successMessage.textContent = "Form submitted successfully!";
-      successMessage.style.color = "green";
-      successMessage.id = "message";
-
-      // Get the parent element of the element to be replaced
-      var parentElement = document.getElementById("parentmessage");
-
-      // Get the element to be replaced
-      var oldElement = document.getElementById("message");
-
-      // Replace the old element with the new element
-      parentElement.replaceChild(successMessage, oldElement);
-    } else {
-      // Error: Display an error message
-      var errorMessage = document.createElement("p");
-      errorMessage.textContent = "An error occurred. Please try again.";
-      errorMessage.style.color = "red";
-      errorMessage.id = "message";
-
-      // Get the parent element of the element to be replaced
-      var parentElement = document.getElementById("parentmessage");
-
-      // Get the element to be replaced
-      var oldElement = document.getElementById("message");
-
-      // Replace the old element with the new element
-      parentElement.replaceChild(errorMessage, oldElement);
-    }
-  })
-  .catch(error => {
-    console.error("An error occurred:", error);
-  });
-
-  for (var pair of formData.entries()) {
-    console.log(pair[0] + ": " + pair[1]);
-  }
-});
-
-
-  function toggleNav() {
+  </body>
+  <script>
+    function toggleNav() {
     var menu = document.getElementById("menu");
     if (menu.classList.contains("hidden")) {
       menu.classList.remove("hidden");
@@ -302,66 +102,5 @@ document.getElementById("form").addEventListener("submit", function(event) {
       menu.classList.add("hidden");
     }
   }
-
-  function showImages(selection) {
-    const images = [
-      { src: 'assets/lpt.jpg', category: 'A', head: 'Liquid Penetration Inspection',
-        desc: 'IPSUM DOLOR FUJHGKB IHGKHGKJK IGGJGLJHLOHIG GIUGIU KIGIUYOUHOIHOUHO IUGTUGHOGOUGOJGJ GIKUGOHO GUGHOHOHH'},
-      { src: 'assets/paut.jpg', category: 'A', head: 'Phase Array Ultrasonic Testing',
-        desc: "Ultrasonic testing (UT) is a non-destructive test method that utilizes sound waves to detect cracks and defects in parts and materials. It can also be used to determine a material's thickness, such as measuring the wall thickness of a pipe." },
-      { src: 'assets/mpi_fluro.jpeg', category: 'A', head: 'Magnetic Particle Inspection',
-        desc: 'IPSUM DOLOR FUJHGKB IHGKHGKJK IGGJGLJHLOHIG GIUGIU KIGIUYOUHOIHOUHO IUGTUGHOGOUGOJGJ GIKUGOHO GUGHOHOHH' },
-      { src: 'assets/electrical.jpg', category: 'B', head: 'Electrical', 
-        desc: 'IPSUM DOLOR FUJHGKB IHGKHGKJK IGGJGLJHLOHIG GIUGIU KIGIUYOUHOIHOUHO IUGTUGHOGOUGOJGJ GIKUGOHO GUGHOHOHH' },
-      { src: 'assets/framing.jpg', category: 'B', head: 'Framing',
-        desc: 'IPSUM DOLOR FUJHGKB IHGKHGKJK IGGJGLJHLOHIG GIUGIU KIGIUYOUHOIHOUHO IUGTUGHOGOUGOJGJ GIKUGOHO GUGHOHOHH' },
-      { src: 'assets/professional-plumber.jpg', category: 'B', head: 'Plumbing',
-        desc: 'IPSUM DOLOR FUJHGKB IHGKHGKJK IGGJGLJHLOHIG GIUGIU KIGIUYOUHOIHOUHO IUGTUGHOGOUGOJGJ GIKUGOHO GUGHOHOHH'},
-      { src: 'assets/welding.jpg', category: 'B', head: 'Welding',
-        desc: 'IPSUM DOLOR FUJHGKB IHGKHGKJK IGGJGLJHLOHIG GIUGIU KIGIUYOUHOIHOUHO IUGTUGHOGOUGOJGJ GIKUGOHO GUGHOHOHH' },
-      { src: 'assets/servicebg.png', category: 'C', head: 'Manpower',
-        desc: 'IPSUM DOLOR FUJHGKB IHGKHGKJK IGGJGLJHLOHIG GIUGIU KIGIUYOUHOIHOUHO IUGTUGHOGOUGOJGJ GIKUGOHO GUGHOHOHH' }
-    ];
-  
-
-    const filteredImages = selection === 'all' ? images : images.filter(image => image.category === selection);
-
-    const container = document.getElementById('image-container');
-    container.innerHTML = '';
-
-    filteredImages.forEach(image => {
-      const subcontainer = document.createElement('div');
-      const span = document.createElement('span');
-      const imgcontainer = document.createElement('div');
-      const imgElement = document.createElement('img');
-      const head = document.createElement('p');
-      const desc = document.createElement('p');
-      head.textContent = image.head;
-      desc.textContent = image.desc
-      imgElement.src = image.src;
-      span.classList.add('h-2/3','block');
-      subcontainer.classList.add('flex', 'flex-col','items-center', 'justify-between');
-      imgElement.classList.add('w-auto', 'h-auto');
-      imgcontainer.classList.add('w-2/3','flex', 'justify-center');
-      head.classList.add('text-center','font-semibold');
-      desc.classList.add('text-center');
-      container.appendChild(subcontainer);
-      imgcontainer.appendChild(imgElement);
-      subcontainer.appendChild(imgcontainer);
-      subcontainer.appendChild(span);
-      subcontainer.appendChild(head);
-      subcontainer.appendChild(span);
-      subcontainer.appendChild(desc);
-    });
-  }
-
-  // document.getElementById("form").addEventListener("submit", function(event) {
-  //   event.preventDefault(); // Prevent form submission
-
-  //   // Perform any necessary form submission handling, such as AJAX request or other operations
-
-  //   // Reset the form fields
-  //   document.getElementById("form").reset();
-  // });
-
-</script>
+  </script>
+</html>
